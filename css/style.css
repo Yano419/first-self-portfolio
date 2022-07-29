@@ -1,0 +1,163 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #606667;
+    width: auto;
+    min-width: 1200px;
+}
+
+body {
+    font-weight: 300;
+    background-color: #f7f8f8;
+}
+
+header {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    background-color: inherit;
+}
+
+/* НЕ РАБОТАЕТ И ПОЭТОМУ СКРЫТО */
+
+/* #nav {
+    position: fixed;
+    margin: 0;
+    padding: 4px;
+    float: right;
+} 
+
+#nav li {
+    display: inline;
+    margin-right: 10px;
+    border: 1px #a5a4a1;
+    background: #a5a4a1;
+    padding: 3px;
+    font-family: inherit;
+    color: inherit;
+    text-align: start;
+}
+
+#nav li:hover {
+    border: 1px #e1be69;
+    background: #e1be69;
+    padding: 5px;
+} */
+
+#portfolio {
+    font-size: 1000%;
+    color: #9a5a47;
+    text-align: center;
+}
+
+h2 {
+    font-size: 70px;
+    text-align: center;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+#information {
+    margin: auto;
+    padding: 13%;
+}
+
+.left1 {
+    width: 20%;
+    float: left;
+    clear: left;
+}
+
+
+#face-photo {
+    float: left;
+    clear: left;
+    margin: 15px;
+    border: 3px solid #9a5a47;
+}
+
+#icon img{
+    width: 45px;
+    margin-top: 7px;
+    border: 3px solid #9a5a47;
+}
+
+#icon {
+    margin: 22%;
+}
+
+.right1 {
+    width: 76%;
+    float: right;
+    margin-left: 5px;
+    font-size: 19px;
+}
+
+.name {
+    text-align: left;
+    width: 100%;
+    float: right;
+    clear: both;
+    border: 3px solid #9a5a47;
+    padding: 13px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.information-text {
+    width: 100%;
+    float: right;
+    clear: right;
+    text-align: left;
+    border: 3px solid #9a5a47;
+    padding: 13px;
+    line-height: 1.4;
+    margin: auto;
+}
+
+#works {
+    padding: 13%;
+}
+
+.works-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #9a5a47;
+    padding: 3px;
+    background:  #f7f8f8;
+}
+
+#hobby 
+{
+    padding: 13%;
+}
+
+#hobby-text {
+    border: 3px solid #9a5a47; 
+    width: auto;
+    padding: 10px;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+#hobby-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+#hobby-card :hover {
+    transition: 1s;
+    transform: scale(1.2);
+}

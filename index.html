@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+         <link rel="stylesheet" href="js/jquery.pagepiling.css">
+         <link rel="stylesheet" href="css/style.css"> 
+         <link rel="preconnect" href="https://fonts.gstatic.com">  
+        <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/jquery.pagepiling.min.js"></script>
+       
+          <script>
+          $(function() {
+              $('#pagepiling').pagepiling({
+                  menu: '#nav',
+                  sectionSelector: '.section',
+                  sectionsColor: ['#f7f8f8', '#f7f8f8', '#f7f8f8', '#f7f8f8'],
+                  // ЗДЕСЬ ПРОБЛЕМА С ШАПКОЙ НО Я ХЗ, ВВЕРХУ
+                  anchors: ['porfolio','information', 'works', 'hobby'],
+                  navigation: {
+                      'textColor': '#606667',
+                      'bulletsColor': '#606667',
+                      'position': 'right',
+                      // 'tooltips': ['portfolio', 'information', 'works', 'hobby']
+                  },
+              });
+          });
+          </script> 
+    </head>
+    <body>
+      <header>
+         <nav>
+           <ul id="nav">
+             <li data-menuanchor="portfolio" class="active">
+               <a href="#portfolio">Home</a>
+              </li>
+            <li data-menuanchor="information">
+              <a href="#information">Information</a>
+            </li>
+            <li data-menuanchor="works">
+              <a href="#works">School works</a>
+            </li>
+            <li data-menuanchor="hobby">
+              <a href="#hobby">Hobby</a>
+            </li>
+          </ul> 
+        </nav>
+      </header>
+        
+         <!-- НЕ ЯСНАЯ ХУЙНЯ　 <div id="pp-nav" class="right">
+          <ul>
+            <li data-tooltip="portfolio"><a href="#portfolio"></a></li> 
+            <li data-tooltip="information"><a href="#information"></a></li>
+            <li data-tooltip="works"><a href="#works"></a></li>
+            <li data-tooltip="hobby"><a href="#hobby"></a></li>
+          </ul>
+        </div>   -->
+           <div id="pagepiling">
+                <section class="section" id="portfolio">
+                    <h1>Portfolio</h1>
+                </section>
+                <section class="section" id="information">
+                  <h2>Information</h2>
+                  <div class="right1">
+                  <div class="name">
+                    <h3 >Voevodina Iana</h3>
+                  </div>
+                  <div class="information-text">
+                    <p>初めまして、ヤナと言います。1年生のプログラマー専攻の学生です。今年21歳になります。ロシア出身です。<br>思ったより生活が忙しいので趣味が特にないです。昔から写真撮ることが好きですから出かければぜひ撮ってます。でもコロナのせいで出かけるのチャンスが少ないですが今年の写真があまりないです　(´；ω；`)ｳｩｩ<br>暇な時間に時々ロシアの友達とゲームやってます。実はゲーム苦手な人ですけど友達と一緒に楽しんでます。でも最初に死んでしまいます。友達がｆｐｓの方ゲームがすきですが。最近RDOとapexがやってます。友人がバウンティハントをしていて、課題を完了している間自分は狩りの合間に馬と犬を撫でます。結構色んなスタイルです。<br>好きな食べ物がないし食べ物の話がちょっと嫌いです。違う話題を話してみましょう<br>IT系で初心者のでまだまだたくさんことが知りません。このポートフォリオ作りがイメージと内容が難しいでした。次ににもっと頑張ると思います。<br>聞きたいことがあったら聞いてください。話が大好きので何でも聞いたら喜びます。<br>よろしくお願いします</p>
+                  </div>
+                </div>
+                  <div class="left1">
+                    <img id="face-photo" src="img/photos/self2.jpg" alt="face photo">
+                    <div id="icon">
+                      <img src="img/sns/instagram.png" alt="instagram-icon">
+                      <img src="img/sns/facebook.png" alt="facebook-icon">
+                      <img src="img/sns/twitter.png" alt="twitter-icon">
+                    </div>
+                  </div>
+                </section>
+                <section class="section pp-scrollable" id="works">
+                    <h2>School works</h2>
+                    <div class="works-card">
+                      <div class="works-card-inner">
+                        <a href="works/10.28/index.html"><img id="works-img" src="img/works/1028html.jpg" alt="1028html"></a>
+                        <h3 id="works-title">10月28日のHTMLの授業で作ったウェブページ</h3>
+                      </div>
+                      <div class="works-card-inner">
+                        <a href="works/11.11/index.html"><img id="works-img" src="img/works/1111html.jpg" alt="1111html"></a>
+                        <h3 id="works-title">11月11日のHTMLの授業で作ったウェブページ</h3>
+                      </div>
+                      <div class="works-card-inner">
+                        <a href="works/11.18/index.html"><img id="works-img" src="img/works/1118html.jpg" alt="1128html"></a>
+                        <h3 id="works-title">11月18日のHTMLの授業で作ったウェブページ</h3>
+                      </div>
+                      <div class="works-card-inner">
+                        <a href="works/12.02/index.html"><img id="works-img" src="img/works/1102html.jpg" alt="1202html"></a>
+                        <h3 id="works-title">12月02日のHTMLの授業で作ったウェブページ</h3>
+                      </div>
+                      <div class="works-card-inner">
+                        <img id="works-img" src="img/works/webpage1.jpg" alt="PH1">
+                        <h3 id="works-title">Photoshopの授業で作ったウェブページのデザイン</h3>
+                      </div>
+                      <div class="works-card-inner">
+                        <img id="works-img" src="img/works/webpage2.jpg" alt="PH2">
+                        <h3 id="works-title">Photoshopの授業で作ったウェブページのデザイン</h3>
+                      </div>
+                    </div>
+                </section>
+                <section class="section pp-scrollable" id="hobby">
+                    <h2>Hobby</h2>
+                    <div id="hobby-text">
+                      <p>写真撮るが好きと書きましたね。こちらに撮影された写真の小さな選択です。残念ながらカメラ持ってないので写真が全てスマホで撮りました。気になりましたらスマホがiphone 8 plusです。写真の地平線のために「VSCO」と「Camera+」のアプリ使ってます。このアプリがおすすめです。ぜひ見てみてください</p>
+                    </div>
+                    <div id="hobby-card">
+                      <img id="hobby-img" src="img/photos/0E9CB51C-EC4D-4310-A64F-7568EFDB777B.JPEG">
+                      <img id="hobby-img" src="img/photos/0F32CFCE-B930-4C78-A207-B51CEF3849A4.jpg">
+                      <img id="hobby-img" src="img/photos/1A25AB7F-430F-43C9-9B32-43E9E338ED73.jpg">
+                      <img id="hobby-img" src="img/photos/2230C280-8718-4EE1-8DBB-6E71E854FE8A.jpg">
+                      <img id="hobby-img" src="img/photos/2376A145-20A5-4DD9-BDFC-214EDD1103FB.JPEG">
+                      <img id="hobby-img" src="img/photos/27D6A484-773B-4BA9-8733-4B7368885B07.jpg">
+                      <img id="hobby-img" src="img/photos/28512464-7B76-4464-BE29-F0B65A434EBF.jpg">
+                      <img id="hobby-img" src="img/photos/44BF45DC-B0FA-4FE5-9A38-2F8BE75917EB.JPEG">
+                      <img id="hobby-img" src="img/photos/501038D8-82EF-4DB8-8974-3B95C00AC20B.jpg">
+                      <img id="hobby-img" src="img/photos/50AC427F-A580-465F-BA51-DEDFB577CD67.jpg">
+                      <img id="hobby-img" src="img/photos/53823E3E-8473-41C6-AB3E-8400689B1923.jpg">
+                      <img id="hobby-img" src="img/photos/5DD9AB65-F932-4F73-A679-10B73FCCA71D.jpg">
+                      <img id="hobby-img" src="img/photos/62EF2778-4406-4B25-B80E-36EEAA991B93.JPEG">
+                      <img id="hobby-img" src="img/photos/7211DE91-7547-4E7A-A4F5-66AC05B502E9.jpg">
+                      <img id="hobby-img" src="img/photos/8A543F46-42A3-4F55-AD94-EC157D665D91.jpg">
+                      <img id="hobby-img" src="img/photos/96F84C05-4BB5-4866-8E48-932136585974.jpg">
+                      <img id="hobby-img" src="img/photos/9AAEEDC3-01D9-4A8A-828F-98445DA1FB78.jpg">
+                      <img id="hobby-img" src="img/photos/B3FE26AE-509B-4153-AE04-7AF0B82640AB.jpg">
+                      <img id="hobby-img" src="img/photos/C956ECC0-A924-439A-99D8-52AB6EDE7FE3.jpg">
+                      <img id="hobby-img" src="img/photos/DA96F21A-E453-42B4-8F87-E5466762B73F.jpg">
+                      <img id="hobby-img" src="img/photos/EB27E5C7-3840-4DEC-A2E1-8DD2AE62F8E5.jpg">
+                      <img id="hobby-img" src="img/photos/EB734FD4-69A5-411A-A975-B3022EAF22E1.jpg">
+                      <!-- <img id="hobby-img" src="img/photos/F88EF5E0-FFF0-4DE6-B671-307D811994EF.jpg"> -->
+                      <img id="hobby-img" src="img/photos/FEDB7F28-F7A9-4FF3-A5FF-C7EF5826D35B.jpg">
+                      <img id="hobby-img" src="img/photos/IMG_0722.JPEG">
+                      <img id="hobby-img" src="img/photos/IMG_0723.JPEG">
+                      <!-- <img id="hobby-img" src="img/photos/IMG_0862.JPEG"> -->
+                      <img id="hobby-img" src="img/photos/IMG_1369.JPEG">
+                      <img id="hobby-img" src="img/photos/IMG_1415.JPEG">
+                      <img id="hobby-img" src="img/photos/IMG_1515.JPEG">
+                      <img id="hobby-img" src="img/photos/IMG_1854.JPEG">
+                      <img id="hobby-img" src="img/photos/IMG_4734.JPEG">
+                      <img id="hobby-img" src="img/photos/IMG_4907.JPG">
+                    </div>
+                </section>
+            </div> 
+    </body>
+</html>
